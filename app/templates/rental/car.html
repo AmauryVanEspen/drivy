@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Drivy - Car Rental{% endblock %}
+
+
+{% block page_content %}
+{{ super() }}
+<div class="page-header">
+	<h1> {{ car.make }} {{ car.model }} </h1>
+</div>
+	
+{{ car.description }} 
+<br>
+{{ car.price }}
+<br>
+<a href="{{  url_for('users.users', user_id=car.proprietor_id) }}"> {{car.proprietor.firstname}}{{car.proprietor.name}} </a>
+<br><br>
+<button> <a href="{{ url_for('rental.rent'), user_id=car.proprietor_id, car_id=car.id }}"> Rent the car</button>
+
+{% endblock %}
+
+

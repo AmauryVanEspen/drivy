@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<ul>
+    <li><a href="{{ url_for('dashboard.rentals') }}">Mes locations</a></li>
+    <li><a href="{{ url_for('dashboard.cars') }}">Mes voitures</a></li>
+    <li><a href="{{ url_for('dashboard.payments') }}">Mes paiements</a></li>
+    <li><a href="{{ url_for('dashboard.profile') }}">Mon compte</a></li>
+</ul>
+{% endblock %}

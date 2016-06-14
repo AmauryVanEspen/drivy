@@ -1,0 +1,12 @@
+{% extends "dashboard.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Drivy - Payments{% endblock %}
+
+{% block page_content %}
+{{ super() }}
+<div class="page-header">
+	<h1>Mes paiements</h1>
+	<p>Vous n'avez effectué encore aucune location</p>
+</div>
+{% endblock %}

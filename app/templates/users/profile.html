@@ -8,7 +8,10 @@
 	<h1>Utilisateur</h1>
 </div>
 <p>
-{{ user.firstname }} {{ user.name }} : {{ user.email }}
+<a href="{{  url_for('users.users', user_id=user.id) }}"> 
+	{{ user.firstname }} {{ user.name }} 
+</a>: {{ user.email }} 
+
 </p>
 <p>
 voitures : 
@@ -17,11 +20,10 @@ voitures :
 		<li>
 			voiture : 
 			<a href="{{  url_for('rental.car', car_id=car.id) }}"> 
-				{{ car.make }} {{ car.model }}, {{ car.description }} {{ car.price }}
-			</a>
+				{{ car.make }} {{ car.model }} 
+			</a>, {{ car.description }} {{ car.price }}
 		</li>
 		{% endfor %}
 	</ul>
 </p>
 {% endblock %}
-

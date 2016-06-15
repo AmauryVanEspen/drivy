@@ -16,7 +16,12 @@
 <br>
 <a href="{{  url_for('users.users', user_id=car.proprietor_id) }}"> {{car.proprietor.firstname}}{{car.proprietor.name}} </a>
 <br><br>
-<button> <a href="{{ url_for('rental.rent'), user_id=car.proprietor_id, car_id=car.id }}"> Rent the car</button>
+
+<button> 
+<!-- <a href="{{ url_for('rental.rent', user_id=car.proprietor_id, car_id=car.id) }}"> 
+Rent the car </a> -->
+Rent the car
+</button>
 
 {% endblock %}
 

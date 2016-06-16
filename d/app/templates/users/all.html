@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Drivy - Users{% endblock %}
+
+{% block page_content %}
+<h1>Tous les utilisateurs</h1>
+<br>
+<ul>
+    {% for user in users %}
+	<li>
+		utilisateur : {{ user.firstname }} {{ user.name }} : {{ user.email }}
+	</li>
+	<br>
+	{% endfor %}
+</ul>
+{% endblock %}

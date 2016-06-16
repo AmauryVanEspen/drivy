@@ -1,0 +1,18 @@
+{% extends "dashboard.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Drivy - Cars{% endblock %}
+
+
+{% block page_content %}
+{{ super() }}
+<div class="page-header">
+	<h1>Ma voiture</h1>
+	<a href="{{  url_for('dashboard.car_edit', car_id=car.id) }}">Editer mon annonce</a>
+</div>
+	
+voiture : {{ car.make }} {{ car.model }}, {{ car.description }} {{ car.price }}
+
+{% endblock %}
+
+

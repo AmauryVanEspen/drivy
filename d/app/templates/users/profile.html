@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Drivy - Users{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>Utilisateur</h1>
+</div>
+<p>
+<a href="{{  url_for('users.users', user_id=user.id) }}"> 
+	{{ user.firstname }} {{ user.name }} 
+</a>: {{ user.email }} 
+
+</p>
+<p>
+voitures : 
+	<ul>
+	    {% for car in cars %}
+		<li>
+			voiture : 
+			<a href="{{  url_for('rental.car', car_id=car.id) }}"> 
+				{{ car.make }} {{ car.model }} 
+			</a>, {{ car.description }} {{ car.price }}
+		</li>
+		{% endfor %}
+	</ul>
+</p>
+{% endblock %}

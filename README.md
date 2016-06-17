@@ -10,7 +10,7 @@ This repository contains the source code of drivy.lol
 
 
 Reminder
-======
+---------
 
 reminder:
 - activate virtualenv : source venv/bin/activate

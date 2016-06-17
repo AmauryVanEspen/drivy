@@ -1,4 +1,4 @@
-Drivy
+drivy
 ======
 
 This repository contains the source code of drivy.lol
@@ -9,10 +9,11 @@ This repository contains the source code of drivy.lol
     └── manage.py - Management script to run migrations/start dev server, etc.
 
 
-Reminder
+reminder
 ---------
 
 reminder:
+- pip list -> list all the modules installed
 - activate virtualenv : source venv/bin/activate
 						deactivate 
 - requirements : pip freeze >requirements.txt
@@ -23,12 +24,12 @@ reminder:
 		python manage.py db upgrade
 
 
-Heroku
+heroku
 -------
 
 heroku :
-heroku run python manage.py deploy
-heroku restart
-heroku maintenance:off
-heroku ps:scale web=1
-heroku logs -t
+- heroku run python manage.py deploy
+- heroku restart
+- heroku maintenance:off
+- heroku ps:scale web=1
+- heroku logs -t

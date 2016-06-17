@@ -2,7 +2,7 @@
   "name": "drivy",
   "version": "1.0.0",
   "description": "druvy",
-  "main": "flaskapp/static/private/js/App.js",
+  "main": "flaskapp/static/js/App.js",
   "private": true,
   "repository": "https://github.com/afrancisboeuf/drivy",
   "scripts": {

@@ -60,7 +60,7 @@ target/
 .kateconfig
 
 # Virtual environment
-venv/*
+venv
 
 # js build files
 g/static/*/_build/*

@@ -59,8 +59,6 @@ target/
 # Kate editor
 .kateconfig
 
-# Virtual environment
-venv
 
 # js build files
 g/static/*/_build/*

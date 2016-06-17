@@ -3,12 +3,13 @@ Drivy
 
 This repository contains the source code of drivy.lol
 
+    ├── flaskapp -  
+    ├── migrations - DB migrations (using Alembic) 
+    ├── tests - Utils for tests
+    └── manage.py - Management script to run migrations/start dev server, etc.
 
 
-
-
-
-Flask
+Reminder
 ======
 
 reminder:
@@ -22,12 +23,10 @@ reminder:
 		python manage.py db upgrade
 
 
-
-
-
 Heroku
 -------
 
+heroku :
 heroku run python manage.py deploy
 heroku restart
 heroku maintenance:off

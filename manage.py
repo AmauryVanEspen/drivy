@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import os
-from app import create_app, db
-from app.models import User
 from flask.ext.script import Manager, Shell
 from flask.ext.migrate import Migrate, MigrateCommand
+from flaskapp.app import create_app, db
+from flaskapp.models.user import User
 
 app = create_app(os.getenv('DRIVY_CONFIG') or 'default')
 manager = Manager(app)

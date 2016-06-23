@@ -1,0 +1,14 @@
+{
+  "name": "drivy",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "jquery#~2.1.4"
+  }
+}

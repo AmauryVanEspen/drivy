@@ -28,6 +28,9 @@ React:
 - npm start
 - npm run build
 
+Bower:
+- bower install
+
 
 heroku
 -------

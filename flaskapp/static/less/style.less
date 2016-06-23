@@ -1,0 +1,187 @@
+
+/* Color Variables */
+@drivy_grey: #3c465a;
+@drivy_light_grey: #dde1e1;
+@drivy_light_blue: #fafbfd;
+@drivy_yellow: rgb(216, 255, 0);
+@drivy_pink: #ff7378;
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+// user 
+
+.ui.grid.user-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ui.grid.user-content{
+  padding-bottom: 20px;
+}
+
+.user-left{
+  background: @drivy_pink;
+}
+
+.user-right{
+  background: white;
+  min-height: 200px;
+}
+
+.ui.grid.user-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+//car 
+
+.ui.grid.car-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ui.grid.car-content{
+  padding-bottom: 20px;
+}
+
+.car-container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+   flex-direction: row;
+}
+
+.car-top{
+  background: @drivy_light_blue;
+}
+
+.car-left{
+  background:  white;
+}
+
+.car-right{
+  background: white;
+}
+
+.ui.menu{
+  height: 60px;
+  font-size: 15px;
+  
+}
+
+p, a{
+  font-weight:100;
+}
+
+a{
+  color: @drivy_grey;
+}
+
+.ui.menu:first-child {
+  margin-bottom: 0px;
+}
+
+.ui.menu .active.item {
+  color: @drivy_pink;
+}
+
+.ui.inverted.segment.drivy-grey{
+  background: @drivy_grey;
+}
+
+
+.ui.primary.button.electrique {
+    color: @drivy_grey;
+    background: @drivy_yellow;
+}
+
+.dashboard{
+  padding: 20px;
+  background: @drivy_light_grey;
+}
+
+.dashboard-inside{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: @drivy_light_blue;
+  border-radius: 5px;
+}
+
+
+
+// from Semantic Layout
+
+// masthead
+.masthead.segment {
+  min-height: 400px;
+  padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-size: 60px;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+// stripe
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+
+// footer
+.footer.segment {
+  padding: 5em 0em;
+}
+
+
+@media only screen and (max-width: 700px) {
+  // menu	
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  // masthead
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}

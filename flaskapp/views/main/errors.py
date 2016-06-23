@@ -1,4 +1,5 @@
 from flask import render_template, request, jsonify
+
 from . import main
 
 
@@ -9,7 +10,7 @@ def page_not_found(e):
 		response = jsonify({'error': 'not found'})
 		response.status_code = 404
 		return response
-	return render_template('404.html'), 404
+	return render_template('main/404.html'), 404
 
 
 @main.app_errorhandler(500)
@@ -19,6 +20,6 @@ def internal_server_error(e):
 		response = jsonify({'error': 'not found'})
 		response.status_code = 404
 		return response
-	return render_template('500.html'), 500
+	return render_template('main/500.html'), 500
 
 

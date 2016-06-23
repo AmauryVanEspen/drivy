@@ -12,7 +12,7 @@ This repository contains the source code of drivy.lol
 reminder
 ---------
 
-reminder:
+Flask:
 - pip list -> list all the modules installed
 - activate virtualenv : source venv/bin/activate
 						deactivate 
@@ -22,6 +22,14 @@ reminder:
 - db :  python manage.py db init 
 		python manage.py db migrate -m "initial migration" 
 		python manage.py db upgrade
+
+React:
+- npm install 
+- npm start
+- npm run build
+
+Bower:
+- bower install
 
 
 heroku

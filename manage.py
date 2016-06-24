@@ -9,7 +9,7 @@ from flaskapp.models.user import User
 
 app = create_app(os.getenv('DRIVY_CONFIG') or 'default')
 manager = Manager(app)
-migrate = Migrate(app, db)
+migrate = Migrate(app, db, directory="./migrations")
 
 
 def make_shell_context():
@@ -20,8 +20,9 @@ manager.add_command('db', MigrateCommand)
 
 @manager.command
 def deploy():
-    from flask.ext.migrate import upgrade
-    upgrade()
+    # from flask.ext.migrate import upgrade
+    # upgrade()
+    return 0
 
 
 if __name__ == '__main__':

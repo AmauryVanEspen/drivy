@@ -6,7 +6,7 @@
   "private": true,
   "repository": "https://github.com/afrancisboeuf/drivy",
   "scripts": {
-    "start": "node server.js",
+    "start": "node reactdevserver.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack -p"
   },

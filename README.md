@@ -37,7 +37,7 @@ heroku
 
 heroku :
 - heroku login
-- heroku run (--app flask-drivy) python flaskapp/manage.py deploy
+- heroku run (--app flask-drivy) python manage.py deploy
 - heroku restart
 - heroku maintenance:off
 - heroku ps:scale web=1

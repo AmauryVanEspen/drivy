@@ -45,13 +45,7 @@ export const routes = (
       <Route  path="/cars/:carId" component={CarsContainer} />
   	  {/*   Users   */}
   	  <Route  path="/users/:userId" component={UsersContainer} />
-      {/*   Auth   
-      <Route  path="auth">
-        <Route  path="login" component={AuthContainer} />
-        <Route  path="logout" component={AuthContainer} />
-        <Route  path="register" component={AuthContainer} />
-      </Route>
-      */}
+      {/*   *   */}
       <Route path="*" component={NoMatchContainer}/>
   </Route>
 );

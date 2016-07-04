@@ -3,9 +3,11 @@ drivy
 
 This repository contains the source code of drivy.lol
 
-    ├── flaskapp -  
+    ├── flaskapp - the Webapp built with Flask 
     ├── migrations - DB migrations (using Alembic) 
-    ├── tests - Utils for tests
+    ├── node_modules - all the javascript packages installed using npm
+    ├── semantic - semantic-ui sources
+    ├── ...
     └── manage.py - Management script to run migrations/start dev server, etc.
 
 
@@ -22,6 +24,8 @@ Flask:
 - db :  python manage.py db init 
 		python manage.py db migrate -m "initial migration" 
 		python manage.py db upgrade
+- dev server python manage.py runserver
+
 
 React:
 - npm install 

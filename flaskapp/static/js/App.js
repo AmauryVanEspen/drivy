@@ -2,9 +2,20 @@
 require("../less/style.less");
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
-import { routes } from './routes';
 
-const root = <Router  history={ browserHistory }  children={ routes } />;
-ReactDOM.render(root, document.getElementById('App'));
+import Root from './containers/Root'
+import configureStore from './store/configureStore'
+
+const store = configureStore()
+
+
+render(
+    <Root history={browserHistory} store={store}/>,
+    document.getElementById('App')
+)
+
+
+
+

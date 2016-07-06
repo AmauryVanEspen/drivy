@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
+
+import DashboardMenu from '../components/DashboardMenu';
 
 /*  Component DashboardContainer  */
 export default class DashboardContainer extends React.Component {
@@ -11,17 +12,14 @@ export default class DashboardContainer extends React.Component {
        
 		<div className="ui container">
 			
-			<div className="ui four item stackable tabs menu">
-				<Link className="item" activeClassName="active" to='/dashboard/rentals'>Mes locations</Link>
-				<Link className="item" activeClassName="active" to='/dashboard/cars'>Mes voitures</Link>
-				<Link className="item" activeClassName="active" to='/dashboard/payments'>Mes paiments</Link>
-				<Link className="item" activeClassName="active" to='/dashboard/profile'>Mon compte</Link>
-			</div>
+			{/*  Dashboard Menu  */}
+			<DashboardMenu/>
 
 			{/*  Dashboard Contents  */}
 			<div className="dashboard-inside">
 				{this.props.children}
 			</div>
+
 		</div>
 
       </div>

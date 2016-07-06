@@ -11,5 +11,6 @@ export default function configureStore(initialState) {
             applyMiddleware(thunk, createLogger({collapsed: true})),
         )
     )
+    console.log(store.getState());
     return store
 }

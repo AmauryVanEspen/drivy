@@ -8,8 +8,8 @@ import RentContainer  from './containers/Rent';
 import AuthContainer  from './containers/Auth';
 import DashboardContainer  from './containers/Dashboard';
 import SearchContainer  from './containers/Search';
-import UsersContainer  from './containers/User';
-import CarsContainer  from './containers/Car';
+import UserContainer  from './containers/User';
+import CarContainer  from './containers/Car';
 import NoMatchContainer  from './containers/NoMatch';
 
 import Rentals  from './components/Rentals';
@@ -42,9 +42,9 @@ export const routes = (
       {/*   Search   */}
       <Route  path="/search" component={SearchContainer} />
       {/*   Cars   */}
-      <Route  path="/cars/:carId" component={CarsContainer} />
+      <Route  path="/cars/:carId" component={CarContainer} />
   	  {/*   Users   */}
-  	  <Route  path="/users/:userId" component={UsersContainer} />
+  	  <Route  path="/users/:userId" component={UserContainer} />
       {/*   *   */}
       <Route path="*" component={NoMatchContainer}/>
   </Route>

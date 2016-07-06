@@ -12,6 +12,14 @@ export function users(state = usersInitial, action) {
 
     switch (action.type) {
 
+        case actions.FETCH_USER_START:
+            return state.merge({ loading: true })
+
+        case actions.FETCH_USER_SUCCESS:
+            return state.merge({
+                items: action.resp.data
+            })
+
         case actions.FETCH_USER_LIST_START:
             return state.merge({ loading: true })
 

@@ -1,5 +1,5 @@
-drivy
-======
+drivy repository
+==================
 
 This repository contains the source code of drivy.lol
 
@@ -11,8 +11,8 @@ This repository contains the source code of drivy.lol
     └── manage.py - Management script to run migrations/start dev server, etc.
 
 
-reminder
----------
+reminder (for me)
+------------------
 
 Flask:
 - pip list -> list all the modules installed
@@ -35,11 +35,7 @@ React:
 Bower:
 - bower install
 
-
-heroku
--------
-
-heroku :
+Heroku :
 - heroku login
 - heroku run (--app flask-drivy) python manage.py deploy
 - heroku restart

@@ -2,12 +2,12 @@ import { combineReducers } from 'redux'
 import { routerReducer as routing } from 'react-router-redux'
 
 
-import { users } from './users'
-import { cars } from './cars'
+import { user } from './user'
+import { car } from './car'
 
 const rootReducer = combineReducers({
-    users,
-    cars
+    user,
+    car
 })
 
 export default rootReducer

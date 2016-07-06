@@ -1,4 +1,4 @@
-Drivy Flask App
+drivy Flask App
 =================
 
 > If you're looking for running drivy flask look at the README.md in the root of the project.
